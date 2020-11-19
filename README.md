@@ -1,4 +1,4 @@
-Party Planner App Design Project - README Template
+Party Planner App Design Project
 ===
 
 # Event Planner
