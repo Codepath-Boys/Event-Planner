@@ -82,10 +82,35 @@ This app will allow users to invite other users to events and also allow users t
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
+
 ### Models
-[Add table of models]
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user post (default field) |
+   | author        | Pointer to User| event author |
+   | password         | string     | user's password |
+   | tasks       | list   | list tasks to be done for event |
+   | taskClaimer | string | whoever claims the task |
+   | date    | string   | date of event |
+   | singleTask     | string | task for event |
+   | updatedAt     | DateTime | date when event is last updated (default field) |
+   | createdAt     | DateTime | date when event was created (default field) |
+   
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+#### List of network requests by screen
+   - Home Feed Screen
+      - (Read/GET) Query all posts where user is author or user has been invited.
+      - (Delete) Delete existing post
+   - Create Post Screen
+      - (Create/POST) Create a new post object
+      - (Create/POST) Create a new task on a post
+      - (Delete) Delete existing task
+   - Post Screen
+       - (Create/POST) claim task in post
+       -  (Delete) unclaim task in post
+   - Profile Screen
+      - (Read/GET) Query logged in user object
+      - (Update/PUT) Update user profile image
