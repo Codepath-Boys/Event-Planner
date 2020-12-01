@@ -3,6 +3,8 @@ Party Planner App Design Project
 
 # Event Planner
 
+<img src='https://recordit.co/Wer9xpcbfU.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 ## Table of Contents
 1. [Overview](#Overview)
 1. [Product Spec](#Product-Spec)
