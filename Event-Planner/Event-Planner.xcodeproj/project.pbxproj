@@ -16,6 +16,7 @@
 		A75E3555256CACDA005041EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75E3553256CACDA005041EA /* LaunchScreen.storyboard */; };
 		A75E3560256CACDA005041EA /* Event_PlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75E355F256CACDA005041EA /* Event_PlannerTests.swift */; };
 		A75E356B256CACDA005041EA /* Event_PlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75E356A256CACDA005041EA /* Event_PlannerUITests.swift */; };
+		A7A6D731257874C3000AB34A /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A6D730257874C3000AB34A /* ComposeViewController.swift */; };
 		ED8AAB9C2575DF420060A929 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8AAB9B2575DF420060A929 /* LoginViewController.swift */; };
 		ED8AABA12575DF670060A929 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8AABA02575DF670060A929 /* FeedViewController.swift */; };
 		F6C1B24AAAA9FB67682CDB0B /* Pods_Event_Planner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95898E1F89EE43F23C649A2F /* Pods_Event_Planner.framework */; };
@@ -57,6 +58,7 @@
 		A75E3566256CACDA005041EA /* Event-PlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Event-PlannerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75E356A256CACDA005041EA /* Event_PlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event_PlannerUITests.swift; sourceTree = "<group>"; };
 		A75E356C256CACDA005041EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7A6D730257874C3000AB34A /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		B380E9D1DECECAEA3E319CB1 /* Pods-Event-Planner-Event-PlannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Event-Planner-Event-PlannerUITests.release.xcconfig"; path = "Target Support Files/Pods-Event-Planner-Event-PlannerUITests/Pods-Event-Planner-Event-PlannerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BB7FB4443397AC3F415A872A /* Pods-Event-PlannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Event-PlannerTests.debug.xcconfig"; path = "Target Support Files/Pods-Event-PlannerTests/Pods-Event-PlannerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E2075A461A516E1AC57D08E1 /* Pods-Event-Planner-Event-PlannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Event-Planner-Event-PlannerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Event-Planner-Event-PlannerUITests/Pods-Event-Planner-Event-PlannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				A75E3556256CACDA005041EA /* Info.plist */,
 				ED8AAB9B2575DF420060A929 /* LoginViewController.swift */,
 				ED8AABA02575DF670060A929 /* FeedViewController.swift */,
+				A7A6D730257874C3000AB34A /* ComposeViewController.swift */,
 			);
 			path = "Event-Planner";
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A6D731257874C3000AB34A /* ComposeViewController.swift in Sources */,
 				ED8AAB9C2575DF420060A929 /* LoginViewController.swift in Sources */,
 				A75E3549256CACD9005041EA /* AppDelegate.swift in Sources */,
 				ED8AABA12575DF670060A929 /* FeedViewController.swift in Sources */,
