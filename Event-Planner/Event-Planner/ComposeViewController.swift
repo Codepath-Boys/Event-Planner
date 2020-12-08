@@ -7,6 +7,7 @@
 
 import UIKit
 import Parse
+import Foundation
 
 class ComposeViewController: UIViewController {
 
@@ -23,9 +24,12 @@ class ComposeViewController: UIViewController {
     
     @IBAction func onSubmit(_ sender: Any) {
         let event = PFObject(className: "Events")
-        
+        let dateConverted = EventDatePicker.date
+        let df = DateFormatter()
+        df.dateFormat = "yyyy-MM-dd hh:mm"
+        event["author"] = PFUser.current()!
         event["name"] = NameTextField.text!
-        event["date"] = EventDatePicker.date
+        event["date"] = df.string(from: dateConverted)
         event["description"] = DescriptionTextField.text!
         
         event.saveInBackground { (success, error) in
