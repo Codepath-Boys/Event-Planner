@@ -54,6 +54,21 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "onTap", sender: indexPath.row)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "onTap" {
+            let vc = segue.destination as! EventViewController
+            let event = events[(sender as? Int)!]
+            let user = event["author"] as! PFUser
+            vc.author = user.username
+            vc.dsc = event["description"] as? String
+            vc.date = event["date"] as? String
+            vc.name = event["name"] as? String
+        }
+    }
     
     /*
     // MARK: - Navigation

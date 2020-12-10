@@ -20,6 +20,7 @@
 		A7A6D736257DE989000AB34A /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A6D735257DE989000AB34A /* EventCell.swift */; };
 		ED8AAB9C2575DF420060A929 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8AAB9B2575DF420060A929 /* LoginViewController.swift */; };
 		ED8AABA12575DF670060A929 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8AABA02575DF670060A929 /* FeedViewController.swift */; };
+		EDC760302581AC57004667F9 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC7602F2581AC57004667F9 /* EventViewController.swift */; };
 		F6C1B24AAAA9FB67682CDB0B /* Pods_Event_Planner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95898E1F89EE43F23C649A2F /* Pods_Event_Planner.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		E2075A461A516E1AC57D08E1 /* Pods-Event-Planner-Event-PlannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Event-Planner-Event-PlannerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Event-Planner-Event-PlannerUITests/Pods-Event-Planner-Event-PlannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED8AAB9B2575DF420060A929 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ED8AABA02575DF670060A929 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		EDC7602F2581AC57004667F9 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		F5BC056CA59987A079D3CB45 /* Pods-Event-PlannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Event-PlannerTests.release.xcconfig"; path = "Target Support Files/Pods-Event-PlannerTests/Pods-Event-PlannerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +157,7 @@
 				ED8AABA02575DF670060A929 /* FeedViewController.swift */,
 				A7A6D730257874C3000AB34A /* ComposeViewController.swift */,
 				A7A6D735257DE989000AB34A /* EventCell.swift */,
+				EDC7602F2581AC57004667F9 /* EventViewController.swift */,
 			);
 			path = "Event-Planner";
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 			files = (
 				A7A6D731257874C3000AB34A /* ComposeViewController.swift in Sources */,
 				ED8AAB9C2575DF420060A929 /* LoginViewController.swift in Sources */,
+				EDC760302581AC57004667F9 /* EventViewController.swift in Sources */,
 				A75E3549256CACD9005041EA /* AppDelegate.swift in Sources */,
 				ED8AABA12575DF670060A929 /* FeedViewController.swift in Sources */,
 				A7A6D736257DE989000AB34A /* EventCell.swift in Sources */,
