@@ -18,6 +18,7 @@
 		A75E356B256CACDA005041EA /* Event_PlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75E356A256CACDA005041EA /* Event_PlannerUITests.swift */; };
 		A7A6D731257874C3000AB34A /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A6D730257874C3000AB34A /* ComposeViewController.swift */; };
 		A7A6D736257DE989000AB34A /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A6D735257DE989000AB34A /* EventCell.swift */; };
+		E0C729082583EB3B00FB2B4E /* ChattingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C729072583EB3B00FB2B4E /* ChattingCell.swift */; };
 		ED8AAB9C2575DF420060A929 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8AAB9B2575DF420060A929 /* LoginViewController.swift */; };
 		ED8AABA12575DF670060A929 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8AABA02575DF670060A929 /* FeedViewController.swift */; };
 		EDC760302581AC57004667F9 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC7602F2581AC57004667F9 /* EventViewController.swift */; };
@@ -64,6 +65,7 @@
 		A7A6D735257DE989000AB34A /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		B380E9D1DECECAEA3E319CB1 /* Pods-Event-Planner-Event-PlannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Event-Planner-Event-PlannerUITests.release.xcconfig"; path = "Target Support Files/Pods-Event-Planner-Event-PlannerUITests/Pods-Event-Planner-Event-PlannerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BB7FB4443397AC3F415A872A /* Pods-Event-PlannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Event-PlannerTests.debug.xcconfig"; path = "Target Support Files/Pods-Event-PlannerTests/Pods-Event-PlannerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0C729072583EB3B00FB2B4E /* ChattingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingCell.swift; sourceTree = "<group>"; };
 		E2075A461A516E1AC57D08E1 /* Pods-Event-Planner-Event-PlannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Event-Planner-Event-PlannerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Event-Planner-Event-PlannerUITests/Pods-Event-Planner-Event-PlannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED8AAB9B2575DF420060A929 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ED8AABA02575DF670060A929 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				A7A6D730257874C3000AB34A /* ComposeViewController.swift */,
 				A7A6D735257DE989000AB34A /* EventCell.swift */,
 				EDC7602F2581AC57004667F9 /* EventViewController.swift */,
+				E0C729072583EB3B00FB2B4E /* ChattingCell.swift */,
 			);
 			path = "Event-Planner";
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				ED8AABA12575DF670060A929 /* FeedViewController.swift in Sources */,
 				A7A6D736257DE989000AB34A /* EventCell.swift in Sources */,
 				A75E354B256CACD9005041EA /* SceneDelegate.swift in Sources */,
+				E0C729082583EB3B00FB2B4E /* ChattingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

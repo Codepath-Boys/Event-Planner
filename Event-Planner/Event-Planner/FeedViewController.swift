@@ -4,7 +4,6 @@
 //
 //  Created by Veeresh Rajendran on 11/30/20.
 //
-
 import UIKit
 import Parse
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -72,7 +71,6 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     /*
     // MARK: - Navigation
-
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
