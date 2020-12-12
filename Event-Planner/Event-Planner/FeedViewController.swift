@@ -30,6 +30,12 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                 self.tableView.reloadData()
             }
         }
+        
+        if (defaults.integer(forKey: "theme") == 1) {
+            view.backgroundColor = .darkGray
+        } else if (defaults.integer(forKey: "theme") == 0){
+            view.backgroundColor = .white
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -53,10 +59,12 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if (defaults.integer(forKey: "theme") == 0) {
-            view.backgroundColor = .white
-        } else {
+        if (defaults.integer(forKey: "theme") == 1) {
             view.backgroundColor = .darkGray
+            tableView.backgroundColor = .darkGray
+        } else if (defaults.integer(forKey: "theme") == 0){
+            view.backgroundColor = .white
+            tableView.backgroundColor = .white
         }
     }
     
@@ -74,6 +82,20 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.EventDescription.text = event["description"] as? String
         cell.EventDate.text = event["date"] as? String
         cell.EventName.text = event["name"] as? String
+        
+//        if (defaults.integer(forKey: "theme") == 0) {
+//            view.backgroundColor = .white
+//            cell.AuthorName.textColor = .black
+//            cell.EventDescription.textColor = .black
+//            cell.EventDate.textColor = .black
+//            cell.EventName.textColor = .black
+//        } else if (defaults.integer(forKey: "theme") == 1){
+//            view.backgroundColor = .darkGray
+//            cell.AuthorName.textColor = .white
+//            cell.EventDescription.textColor = .white
+//            cell.EventDate.textColor = .white
+//            cell.EventName.textColor = .white
+//        }
 
         return cell
     }

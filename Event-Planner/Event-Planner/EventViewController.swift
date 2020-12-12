@@ -25,6 +25,8 @@ class EventViewController: UIViewController, UITableViewDataSource, UITableViewD
     var dsc: String?
     var name: String?
     
+    let defaults = UserDefaults.standard
+    
     var messages: [PFObject] = []
     
     override func viewDidLoad() {
@@ -45,6 +47,22 @@ class EventViewController: UIViewController, UITableViewDataSource, UITableViewD
         sendButton.layer.cornerRadius = 8
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if (defaults.integer(forKey: "theme") == 0) {
+            view.backgroundColor = .white
+            eventName.textColor = .black
+            eventAuthor.textColor = .black
+            eventDescription.textColor = .black
+            eventDate.textColor = .black
+        } else if (defaults.integer(forKey: "theme") == 1) {
+            view.backgroundColor = .darkGray
+            eventName.textColor = .white
+            eventAuthor.textColor = .white
+            eventDescription.textColor = .white
+            eventDate.textColor = .white
+        }
     }
     
     @objc func retrieveChatMessages() {
@@ -104,12 +122,23 @@ class EventViewController: UIViewController, UITableViewDataSource, UITableViewD
         let message = messages[indexPath.row]
         cell.messageLabel.text = message["text"] as? String
         
+        
+        
         if let user = message["user"] as? PFUser {
             cell.usernameLabel.text = user.username
         } else {
             cell.usernameLabel.text = "?"
         }
         
+        if (defaults.integer(forKey: "theme") == 0) {
+            cell.backgroundColor = .white
+            cell.messageLabel.textColor = .black
+            cell.usernameLabel.textColor = .darkGray
+        } else {
+            cell.backgroundColor = .darkGray
+            cell.messageLabel.textColor = .white
+            cell.usernameLabel.textColor = .white
+        }
         // BONUS: ADD avatarImage TO CELL STORYBOARD AND CONNECT TO ChatCell
 //        let baseURL = "https://api.adorable.io/avatars/"
 //        let imageSize = 20
