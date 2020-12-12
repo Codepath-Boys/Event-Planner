@@ -17,10 +17,12 @@ class ComposeViewController: UIViewController {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    @IBOutlet weak var submitButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        submitButton.layer.cornerRadius = 8
         // Do any additional setup after loading the view.
     }
     

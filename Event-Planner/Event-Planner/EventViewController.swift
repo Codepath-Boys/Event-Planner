@@ -18,6 +18,8 @@ class EventViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBOutlet weak var messageTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var sendButton: UIButton!
+    
     var author: String?
     var date: String?
     var dsc: String?
@@ -39,6 +41,8 @@ class EventViewController: UIViewController, UITableViewDataSource, UITableViewD
         tableView.estimatedRowHeight = 50
         
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(retrieveChatMessages), userInfo: nil, repeats: true)
+        
+        sendButton.layer.cornerRadius = 8
         
         // Do any additional setup after loading the view.
     }

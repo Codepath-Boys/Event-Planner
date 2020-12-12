@@ -18,17 +18,23 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
     
-    
     @IBOutlet weak var themeLabel: UILabel!
         
     @IBOutlet weak var currentPassword: UITextField!
     @IBOutlet weak var newPassword: UITextField!
+    
+    @IBOutlet weak var changeNameButton: UIButton!
+    @IBOutlet weak var changePassButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let user = PFUser.current()
         userNameLabel.text = user!.username
+        
+        changeNameButton.layer.cornerRadius = 8
+        changePassButton.layer.cornerRadius = 8
         // Do any additional setup after loading the view.
     }
     
