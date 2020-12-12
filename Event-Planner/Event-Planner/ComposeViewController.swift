@@ -27,6 +27,7 @@ class ComposeViewController: UIViewController {
         let dateConverted = EventDatePicker.date
         let df = DateFormatter()
         df.dateFormat = "yyyy-MM-dd hh:mm"
+        df.dateFormat = "MMM dd, YYY hh:mm"
         event["author"] = PFUser.current()!
         event["name"] = NameTextField.text!
         event["date"] = df.string(from: dateConverted)
@@ -42,6 +43,10 @@ class ComposeViewController: UIViewController {
         }
     }
     
+    @IBAction func goBack(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+        print("returning")
+    }
     
     /*
     // MARK: - Navigation

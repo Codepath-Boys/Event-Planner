@@ -68,8 +68,14 @@ class ProfileViewController: UIViewController {
     }
     @IBAction func changePassword(_ sender: Any) {
         let user = PFUser.current()
-        if currentPassword.text == user?["password"] as? String {
-            user?["password"] = newPassword.text
+        PFUser.logInWithUsername(inBackground: user?["username"] as! String ?? "", password: currentPassword.text ?? "") { (user, error) in
+            if user != nil {
+                user?.password = self.newPassword.text
+                user?.saveInBackground()
+                print("new password saved")
+            } else {
+                print("Error: \(String(describing: error?.localizedDescription))")
+            }
         }
     }
     /*
