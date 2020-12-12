@@ -20,10 +20,24 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.delegate = self
         tableView.dataSource = self
         // Do any additional setup after loading the view.
+        let query = PFQuery(className: "Events")
+        query.includeKey("author")
+        query.limit = 20
+        
+        query.findObjectsInBackground { (events, error) in
+            if events != nil {
+                self.events = events!
+                self.tableView.reloadData()
+            }
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
         
         let query = PFQuery(className: "Events")
         query.includeKey("author")
@@ -35,6 +49,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                 self.tableView.reloadData()
             }
         }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
