@@ -7,6 +7,8 @@
 import UIKit
 import Parse
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    let defaults = UserDefaults.standard
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -32,6 +34,14 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                 self.events = events!
                 self.tableView.reloadData()
             }
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if (defaults.integer(forKey: "theme") == 0) {
+            view.backgroundColor = .white
+        } else {
+            view.backgroundColor = .darkGray
         }
     }
     

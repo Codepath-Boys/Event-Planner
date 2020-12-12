@@ -6,14 +6,17 @@
 //
 
 import UIKit
+import Parse
 
 class ProfileViewController: UIViewController {
 
     let defaults = UserDefaults.standard
+    
     @IBOutlet weak var themeControl: UISegmentedControl!
     
     @IBOutlet weak var userLabel: UILabel!
     @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var nameTextField: UITextField!
     
     @IBOutlet weak var dateJoinedLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
@@ -38,6 +41,7 @@ class ProfileViewController: UIViewController {
     func updateTheme() {
         if (defaults.integer(forKey: "theme") == 0) {
             view.backgroundColor = .white
+            UITabBar.appearance().barTintColor = .white
             themeLabel.textColor = .black
             userLabel.textColor = .black
             userNameLabel.textColor = .black
@@ -45,6 +49,7 @@ class ProfileViewController: UIViewController {
             dateLabel.textColor = .black
         } else {
             view.backgroundColor = .darkGray
+            UITabBar.appearance().barTintColor = .darkGray
             themeLabel.textColor = .white
             userLabel.textColor = .white
             userNameLabel.textColor = .white
@@ -53,6 +58,11 @@ class ProfileViewController: UIViewController {
         }
     }
     
+    @IBAction func changeName(_ sender: Any) {
+        var user = PFUser.current()
+        user?["username"] = nameTextField.text
+        user?.saveInBackground()
+    }
     /*
     // MARK: - Navigation
 

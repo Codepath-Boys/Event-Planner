@@ -8,6 +8,8 @@
 import UIKit
 
 class ChattingCell: UITableViewCell {
+    
+    let defaults = UserDefaults.standard
 
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
@@ -16,6 +18,8 @@ class ChattingCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
