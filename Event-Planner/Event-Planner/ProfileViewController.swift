@@ -22,13 +22,15 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var dateLabel: UILabel!
     
     @IBOutlet weak var themeLabel: UILabel!
-    
-    
-    
+        
+    @IBOutlet weak var currentPassword: UITextField!
+    @IBOutlet weak var newPassword: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let user = PFUser.current()
+        userNameLabel.text = user!.username
         // Do any additional setup after loading the view.
     }
     
@@ -59,9 +61,16 @@ class ProfileViewController: UIViewController {
     }
     
     @IBAction func changeName(_ sender: Any) {
-        var user = PFUser.current()
+        let user = PFUser.current()
         user?["username"] = nameTextField.text
         user?.saveInBackground()
+        viewDidLoad()
+    }
+    @IBAction func changePassword(_ sender: Any) {
+        let user = PFUser.current()
+        if currentPassword.text == user?["password"] as? String {
+            user?["password"] = newPassword.text
+        }
     }
     /*
     // MARK: - Navigation
