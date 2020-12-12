@@ -10,11 +10,32 @@ import Parse
 import Foundation
 
 class ComposeViewController: UIViewController {
+    
+    let defaults = UserDefaults.standard
 
+    @IBOutlet weak var eventNameLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if (defaults.integer(forKey: "theme") == 0) {
+            view.backgroundColor = .white
+            eventNameLabel.textColor = .black
+            dateLabel.textColor = .black
+            descriptionLabel.textColor = .black
+        } else {
+            view.backgroundColor = .darkGray
+            eventNameLabel.textColor = .white
+            dateLabel.textColor = .white
+            descriptionLabel.textColor = .white
+        }
     }
     
     @IBOutlet weak var NameTextField: UITextField!

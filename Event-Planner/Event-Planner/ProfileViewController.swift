@@ -18,8 +18,6 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
     
-    @IBOutlet weak var dateJoinedLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
     
     @IBOutlet weak var themeLabel: UILabel!
         
@@ -47,16 +45,12 @@ class ProfileViewController: UIViewController {
             themeLabel.textColor = .black
             userLabel.textColor = .black
             userNameLabel.textColor = .black
-            dateJoinedLabel.textColor = .black
-            dateLabel.textColor = .black
         } else {
             view.backgroundColor = .darkGray
             UITabBar.appearance().barTintColor = .darkGray
             themeLabel.textColor = .white
             userLabel.textColor = .white
             userNameLabel.textColor = .white
-            dateJoinedLabel.textColor = .white
-            dateLabel.textColor = .white
         }
     }
     
