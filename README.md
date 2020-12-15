@@ -16,7 +16,7 @@ Party Planner App Design Project
 
 ## Overview
 ### Description
-This app will allow users to invite other users to events and also allow users to plan out aspects of the event. It will also allow people to claim tasks in preparation of the event.
+This app will allow users to invite other users to events and also allow users to plan out aspects of the event. It will also have a built in chat feature to allow for easy communication.
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
@@ -54,8 +54,8 @@ This app will allow users to invite other users to events and also allow users t
    * ability to create an account
 * Event list screen
     * displays all events that a user has created or been invited to
-* To-do's screen
-    * displays all to-do's of an event when the event is clicked ono
+* Chat screen
+    * displays chat of an event when the event is clicked ono
 * Profile screen
     * customize profile and edit settings
 
