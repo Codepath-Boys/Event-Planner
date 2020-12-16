@@ -4,8 +4,8 @@ Party Planner App Design Project
 # Event Planner
 
 <img src='https://recordit.co/UzaLdzAHjv.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-<img src='https://recordit.co/DPGuRPKfpo.gif'  width='' alt='Video Walkthrough' />
-<img src='https://recordit.co/HnACxztYhN.gif'  width='' alt='Video Walkthrough' />
+<img src='https://recordit.co/DPGuRPKfpo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://recordit.co/HnACxztYhN.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 ## Table of Contents
